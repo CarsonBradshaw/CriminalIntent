@@ -28,7 +28,7 @@ public class CrimeLab {
             Crime crime = new Crime();
             crime.setTitle("Crime #" + i);
             crime.setSolved(i % 2 == 0); // Every other one
-            crime.setRequiresPolice(Math.random() < 0.5);  //Sets requiresPolice randomly
+            crime.setRequiresPolice(false);
             mCrimes.add(crime);
         }
     }
