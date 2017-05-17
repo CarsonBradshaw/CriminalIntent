@@ -132,4 +132,12 @@ public class CrimeFragment extends Fragment {
         }
     }
 
+    @Override
+    public void onPause() {
+        super.onPause();
+
+        CrimeLab.get(getActivity())
+                .updateCrime(mCrime);
+    }
+
 }

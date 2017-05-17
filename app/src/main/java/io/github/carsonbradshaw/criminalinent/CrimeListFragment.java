@@ -124,25 +124,18 @@ public class CrimeListFragment extends Fragment {
         CrimeLab crimeLab = CrimeLab.get(getActivity());
         Map<UUID, Crime> crimes = crimeLab.getCrimes();
 
+
+
         if (mAdapter == null) {
             List<Crime> crimeList = new ArrayList<Crime>(crimes.values());
             mAdapter = new CrimeAdapter(crimeList);
             mCrimeRecyclerView.setAdapter(mAdapter);
         } else {
-            if(mClickedListPosition<0){
-                List<Crime> crimeList = new ArrayList<Crime>(crimes.values());
-                mAdapter = new CrimeAdapter(crimeList);
-                mCrimeRecyclerView.setAdapter(mAdapter);
-                mAdapter.notifyDataSetChanged();
-
-            }
-            else{
-                List<Crime> crimeList = new ArrayList<Crime>(crimes.values());
-                mAdapter = new CrimeAdapter(crimeList);
-                mCrimeRecyclerView.setAdapter(mAdapter);
-                mAdapter.notifyDataSetChanged();
-                //mAdapter.notifyItemChanged(mClickedListPosition);
-            }
+            List<Crime> crimeList = new ArrayList<Crime>(crimes.values());
+            mAdapter = new CrimeAdapter(crimeList);
+            mCrimeRecyclerView.setAdapter(mAdapter);
+            mAdapter.setCrimes(crimeList);
+            mAdapter.notifyDataSetChanged();
         }
 
         updateSubtitle();
@@ -203,6 +196,10 @@ public class CrimeListFragment extends Fragment {
         @Override
         public int getItemCount() {
             return mCrimes.size();
+        }
+
+        public void setCrimes(List<Crime> crimes) {
+            mCrimes = crimes;
         }
 
         @Override
