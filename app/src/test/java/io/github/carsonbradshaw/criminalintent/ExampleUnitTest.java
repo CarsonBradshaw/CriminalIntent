@@ -1,4 +1,4 @@
-package io.github.carsonbradshaw.criminalinent;
+package io.github.carsonbradshaw.criminalintent;
 
 import org.junit.Test;
 

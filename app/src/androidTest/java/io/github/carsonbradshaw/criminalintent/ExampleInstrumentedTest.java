@@ -1,4 +1,4 @@
-package io.github.carsonbradshaw.criminalinent;
+package io.github.carsonbradshaw.criminalintent;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

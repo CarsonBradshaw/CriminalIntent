@@ -1,4 +1,4 @@
-package io.github.carsonbradshaw.criminalinent.database;
+package io.github.carsonbradshaw.criminalintent.database;
 
 import android.database.Cursor;
 import android.database.CursorWrapper;
@@ -6,8 +6,8 @@ import android.database.CursorWrapper;
 import java.util.Date;
 import java.util.UUID;
 
-import io.github.carsonbradshaw.criminalinent.Crime;
-import io.github.carsonbradshaw.criminalinent.database.CrimeDbSchema.CrimeTable;
+import io.github.carsonbradshaw.criminalintent.Crime;
+import io.github.carsonbradshaw.criminalintent.database.CrimeDbSchema.CrimeTable;
 
 /**
  * Created by Admin on 5/17/2017.

@@ -1,10 +1,10 @@
-package io.github.carsonbradshaw.criminalinent.database;
+package io.github.carsonbradshaw.criminalintent.database;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import io.github.carsonbradshaw.criminalinent.database.CrimeDbSchema.CrimeTable;
+import io.github.carsonbradshaw.criminalintent.database.CrimeDbSchema.CrimeTable;
 
 /**
  * Created by Admin on 5/17/2017.

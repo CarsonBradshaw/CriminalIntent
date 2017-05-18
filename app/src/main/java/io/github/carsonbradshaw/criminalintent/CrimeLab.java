@@ -1,4 +1,4 @@
-package io.github.carsonbradshaw.criminalinent;
+package io.github.carsonbradshaw.criminalintent;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -6,18 +6,13 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.Random;
 import java.util.UUID;
 
-import io.github.carsonbradshaw.criminalinent.database.CrimeBaseHelper;
-import io.github.carsonbradshaw.criminalinent.database.CrimeCursorWrapper;
-import io.github.carsonbradshaw.criminalinent.database.CrimeDbSchema;
-import io.github.carsonbradshaw.criminalinent.database.CrimeDbSchema.CrimeTable;
+import io.github.carsonbradshaw.criminalintent.database.CrimeBaseHelper;
+import io.github.carsonbradshaw.criminalintent.database.CrimeCursorWrapper;
+import io.github.carsonbradshaw.criminalintent.database.CrimeDbSchema.CrimeTable;
 
 /**
  * Created by Carson on 5/13/2017.

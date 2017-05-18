@@ -1,4 +1,4 @@
-package io.github.carsonbradshaw.criminalinent.database;
+package io.github.carsonbradshaw.criminalintent.database;
 
 /**
  * Created by Admin on 5/17/2017.
