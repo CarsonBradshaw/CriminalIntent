@@ -22,20 +22,6 @@ import java.util.GregorianCalendar;
 public class DatePickerFragment extends DialogFragment {
 
     private static final String ARG_DATE = "date";
-    public static final String EXTRA_DATE =
-            "com.bignerdranch.android.criminalintent.date";
-
-    private DatePicker mDatePicker;
-
-    public static DatePickerFragment newInstance(Date date) {
-        Bundle args = new Bundle();
-        args.putSerializable(ARG_DATE, date);
-
-        DatePickerFragment fragment = new DatePickerFragment();
-        fragment.setArguments(args);
-        return fragment;
-    }
-
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         Date date = (Date) getArguments().getSerializable(ARG_DATE);
@@ -67,6 +53,20 @@ public class DatePickerFragment extends DialogFragment {
                             }
                         })
                 .create();
+    }
+
+    public static final String EXTRA_DATE =
+            "com.bignerdranch.android.criminalintent.date";
+
+    private DatePicker mDatePicker;
+
+    public static DatePickerFragment newInstance(Date date) {
+        Bundle args = new Bundle();
+        args.putSerializable(ARG_DATE, date);
+
+        DatePickerFragment fragment = new DatePickerFragment();
+        fragment.setArguments(args);
+        return fragment;
     }
 
     private void sendResult(int resultCode, Date date) {
